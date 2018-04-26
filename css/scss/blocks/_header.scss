@@ -1,0 +1,129 @@
+.hdr {
+	background: url(/images/hdr.png) no-repeat center top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  .hdr-overlay{
+		background-color: rgba(19, 17, 17, 0.62);
+	
+	.hdr-ctr {
+		@extend %container-mxw;
+		padding-top: 2em;
+    	display: flex;
+    	justify-content: space-between;
+		
+		.hdr-ctr-i {
+			
+			.hdr-ctr-logo {
+				width: 7em;
+			}
+
+		}	
+		.hdr-nav {
+			display: flex;
+			align-items: center;
+				
+				.hdr-nav-link-list {
+					display: flex;
+					
+					.hdr-nav-ctr-link {
+						margin-right: 1em;
+						.hdr-nav-link {
+							padding-right: 3em;
+							color: #ffffff;
+							font-weight: 600;
+							text-decoration: none;
+							text-transform: uppercase;
+							font-size: .80em;
+							transition: all 300ms ease;
+							
+							&:hover {
+								color: #000;
+							}
+						}
+					}
+				}
+		}
+	}
+	
+	.hdr-ctr-2 {
+		@extend %container-mxw;
+		position: relative;
+		height: 100vh;
+		.hdr-ctr-intro {
+			position: absolute;
+			width: 100%;
+			@include centrer(40%, 50%, 50%, 50%);
+			
+			.hdr-ctr-t4{
+				@extend %hrd-ctr-t4;
+				margin-bottom: .5em;
+			}
+			
+			.hdr-ctr-t2 {
+				font-size: 2.5em;
+				font-weight: 700;
+				text-transform: uppercase;
+				letter-spacing: -1px;
+				text-align: center;
+				color: #fff;
+				margin-bottom: .5em;
+			}
+			
+			.hrd-ctr-t4 {
+				@extend %hrd-ctr-t4;
+				margin-bottom: 2.75em;
+			}
+			
+			.hdr-ctr-link {
+		    	padding: .85em 3em;
+				position: absolute;
+				border: 2px solid #fff;
+				color: #fff;
+				background-color: rgba(243, 156, 18, 0);
+				text-transform: uppercase;
+				text-decoration: none;
+				left: 50%;
+    			transform: translate(-50%);
+				transition: all 300ms ease;
+				font-weight: 600;
+				font-size: .75em;
+				
+				&:hover {
+					background-color: #f39c12;
+					color: #fff;
+					border: 2px solid #f39c12;
+				}
+			}
+		}
+		
+			  
+	  .hdr-ctr-selector {
+		  position: absolute;
+		  display: flex;
+		  @include centrer-s(20%, 50%, 50%, 50%);
+		  .hdr-selector-link {
+			  width: 15px;
+    		  height: 15px;
+    		  border-radius: 1em;
+			  background-color: #b6b6b6;
+			  transition: all 300ms ease;
+			  
+			  &:not(:first-child) {
+    			margin-left: .5em;
+		  	  }
+			  
+			  &:hover {
+					background-color: #fff;
+				}
+			  
+		  }
+		  
+	  }
+		
+
+    }
+
+  }	
+}

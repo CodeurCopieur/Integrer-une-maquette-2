@@ -1,0 +1,29 @@
+/**
+ * Gotham XNarrow Regular
+ */
+ %gotham-x-narrow-regular {
+  font-family: $font-family-gotham-x-narrow;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/**
+ * Google apis Open Sans
+ */
+
+%ft-f-open-sans {
+	font-family: $font-family-open-sans;
+}
+
+%container-mxw {
+	max-width: 62em;
+	margin: 0 auto;
+}
+
+%hrd-ctr-t4 {
+	font-size: 1.5em;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
