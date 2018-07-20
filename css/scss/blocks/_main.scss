@@ -4,9 +4,10 @@
         margin-bottom: 5em;
         .container-intro{
             @extend %container-mxw2;
+            margin-bottom: 4em;
             display: flex;
             align-items: center;
-            .ci-titre-2 {
+            .ci-titre-1 {
                     margin-right: 1em;
                     margin-left: 2em;
                     padding-right: 1em;
@@ -15,9 +16,50 @@
                     text-transform: uppercase;
             }
             p.ci-description {
-                    font-size: .90em;
+                    font-size: 1em;
+                text-transform: uppercase;
+                    line-height: 1.25em;
             }
             
+        }
+        .container-story {
+           @extend %container-mxw3;
+                display: grid;
+                grid-template-columns: 1fr 5fr 3fr;
+                grid-column-gap: 1.5em;
+           
+            .container-icone {
+                border: 2px solid orange;
+                width: 125px;
+                height: 125px;
+                font-size: 2em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .container-description {
+                width: 100%;
+                .cd-titre-2 {
+                    text-transform: uppercase;
+                    margin-bottom: 1em;
+                }
+                
+                .ci-description-1 {
+                    color: #e74c3c;
+                    line-height: 1em;
+                    font-size: 1em;
+                    margin-bottom:1.5em;
+                }
+                
+                .ci-description-2 {
+                    font-size: 1em;
+                    line-height: 1.25em;
+
+                }
+            }
+            .container-picture {
+                
+            }
         }
     }
 }
