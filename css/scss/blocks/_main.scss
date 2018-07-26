@@ -4,7 +4,7 @@
         margin-bottom: 5em;
         .container-intro{
             @extend %container-mxw2;
-            margin-bottom: 4em;
+            margin-bottom: 8em;
             display: flex;
             align-items: center;
             .ci-titre-1 {
@@ -27,9 +27,13 @@
                 display: grid;
                 grid-template-columns: 1fr 5fr 3fr;
                 grid-column-gap: 1.5em;
+                padding-bottom: 8em;
+                border-bottom: 1px solid #ccc;
+                margin-bottom: 8em;
            
             .container-icone {
                 border: 2px solid orange;
+                border-radius: 5em;
                 width: 125px;
                 height: 125px;
                 font-size: 2em;
@@ -59,6 +63,72 @@
             }
             .container-picture {
                 
+            }
+        }
+        
+        .container-skills {
+            @extend %container-mxw3;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 1.5em;
+            
+            .container-info-skills {
+                .container-1 {
+                    display: grid;
+                    grid-template-columns: 1fr 3fr;
+                    grid-column-gap: 1.5em;
+                    
+                    .container-icone {
+                        border: 2px solid orange;
+                        border-radius: 5em;
+                        width: 125px;
+                        height: 125px;
+                        font-size: 2em;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .container-td {
+                        .cis-titre-2 {
+                            text-transform: uppercase;
+                            margin-bottom: 1em;
+                        }
+                        .ci-description-1 {
+                            font-size: 1em;
+                            line-height: 1.5em;
+                        }
+                    }
+                }
+                
+                .container-2 {
+                    margin-top: 5em;
+                    display: grid;
+                        grid-template-rows: 1fr 1fr;
+                        grid-row-gap: 1.75em;
+                    
+                    .progress {
+                        
+                        display: grid;
+                        grid-template-rows: 1fr 1fr;
+                        grid-row-gap: .5em;
+                        
+                        .progress-titre-2 {
+                            .skill {
+                                font-weight: bold;
+                            }
+                        }
+                        .progress-container {
+                            height: 10px;
+                            background-color: #ccc;
+                            .progress-bar {
+                                height: 100%;
+                                width: 88%;
+                                background-color: orange;
+                                
+                            }
+                        }
+                    }
+                }
             }
         }
     }
