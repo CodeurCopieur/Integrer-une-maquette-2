@@ -1,4 +1,6 @@
 .main {
+    
+    /*  section 1   */
     .main-container {
         margin-top: 5em;
         margin-bottom: 5em;
@@ -120,9 +122,27 @@
                         .progress-container {
                             height: 10px;
                             background-color: #ccc;
-                            .progress-bar {
+                            .progress-bar-1 {
                                 height: 100%;
                                 width: 88%;
+                                background-color: orange;
+                                
+                            }
+                            .progress-bar-2 {
+                                height: 100%;
+                                width: 76%;
+                                background-color: orange;
+                                
+                            }
+                            .progress-bar-3 {
+                                height: 100%;
+                                width: 81%;
+                                background-color: orange;
+                                
+                            }
+                            .progress-bar-4 {
+                                height: 100%;
+                                width: 71%;
                                 background-color: orange;
                                 
                             }
@@ -132,4 +152,52 @@
             }
         }
     }
+    
+    
+    
+    /*  section 2   */
+    
+    .background-image-1 {
+        background: url(/images/bg1.jpg) no-repeat center top;
+    background-position: 100% 40%;
+    background-size: cover;
+    height: 500px;
+        position: relative;
+            
+            .container-citation {
+                position: absolute;
+                @include centrer-bg-image(50%, 50%, 50%, 50%);
+                @extend %container-citation;
+
+                .quote-text {
+                    font-size: 45px;
+                    line-height: 60px;
+                    font-weight: bold;
+                    position: relative;
+                    
+                    &::before{
+                        content: '"';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        font-size: 55px;
+                    }
+                    
+                    &::after{
+                        content: '"';
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        font-size: 55px;
+                    }
+                }
+                
+                .quote-author {
+                    
+                }
+                
+            }
+        
+    }
+    
 }
