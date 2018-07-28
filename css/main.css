@@ -18,7 +18,7 @@ body {
   margin: 0 auto;
 }
 
-.main .main-container .container-story, .main .main-container .container-skills {
+.main .main-container .container-story, .main .main-container .container-skills, .main .main-container .post-container {
   max-width: 70em;
   margin: 0 auto;
 }
@@ -445,7 +445,7 @@ body {
   text-transform: uppercase;
 }
 
-.main .main-container .container-intro p.ci-description {
+.main .main-container .container-intro .ci-description {
   font-size: 1em;
   text-transform: uppercase;
   line-height: 1.25em;
@@ -577,6 +577,7 @@ body {
   background-size: cover;
   height: 500px;
   position: relative;
+  color: #fff;
 }
 
 .main .background-image-1 .container-citation {
@@ -607,4 +608,53 @@ body {
   top: 0;
   right: 0;
   font-size: 55px;
+}
+
+.main .background-image-1 .container-citation .quote-author {
+  text-transform: uppercase;
+  font-style: normal;
+  font-size: 24px;
+  text-align: -webkit-center;
+}
+
+.main .background-image-1 .container-citation .quote-author::before {
+  content: '';
+  height: 5px;
+  width: 50px;
+  display: block;
+  background-color: orange;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+
+.main .main-container {
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+
+.main .main-container .container-intro {
+  margin-bottom: 8em;
+  display: flex;
+  align-items: center;
+}
+
+.main .main-container .container-intro .ci-titre-1 {
+  margin-right: 1em;
+  margin-left: 2em;
+  padding-right: 1em;
+  border-right: 2px solid orange;
+  line-height: 3em;
+  text-transform: uppercase;
+}
+
+.main .main-container .container-intro .ci-description {
+  font-size: 1em;
+  text-transform: uppercase;
+  line-height: 1.25em;
+}
+
+.main .main-container .post-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1.75em;
 }

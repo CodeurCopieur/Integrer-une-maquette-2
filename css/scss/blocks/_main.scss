@@ -10,14 +10,14 @@
             display: flex;
             align-items: center;
             .ci-titre-1 {
-                    margin-right: 1em;
-                    margin-left: 2em;
-                    padding-right: 1em;
-                    border-right: 2px solid orange;
-                    line-height: 3em;
-                    text-transform: uppercase;
+                margin-right: 1em;
+                margin-left: 2em;
+                padding-right: 1em;
+                border-right: 2px solid orange;
+                line-height: 3em;
+                text-transform: uppercase;
             }
-            p.ci-description {
+            .ci-description {
                     font-size: 1em;
                 text-transform: uppercase;
                     line-height: 1.25em;
@@ -159,10 +159,11 @@
     
     .background-image-1 {
         background: url(/images/bg1.jpg) no-repeat center top;
-    background-position: 100% 40%;
-    background-size: cover;
-    height: 500px;
+        background-position: 100% 40%;
+        background-size: cover;
+        height: 500px;
         position: relative;
+        color: #fff;    
             
             .container-citation {
                 position: absolute;
@@ -193,10 +194,69 @@
                 }
                 
                 .quote-author {
+                    text-transform: uppercase;
+                    font-style: normal;
+                    font-size: 24px;
+                    text-align: -webkit-center;
                     
+                    &::before{
+                            content: '';
+                            height: 5px;
+                            width: 50px;
+                            display: block;
+                            background-color: orange;
+                            margin-bottom: 2em;
+                            margin-top: 2em;
+                    }
                 }
                 
             }
+        
+    }
+    
+    .main-container {
+        
+        margin-top: 5em;
+        margin-bottom: 5em;
+        
+        .container-intro {
+            @extend %container-mxw2;
+            margin-bottom: 8em;
+            display: flex;
+            align-items: center;
+            
+            .ci-titre-1 {
+                margin-right: 1em;
+                margin-left: 2em;
+                padding-right: 1em;
+                border-right: 2px solid orange;
+                line-height: 3em;
+                text-transform: uppercase;
+            }
+            
+            .ci-description {
+                font-size: 1em;
+                text-transform: uppercase;
+                line-height: 1.25em;
+            }
+            
+        }
+        
+        .post-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 1.75em;
+            @extend %container-mxw3;
+            
+            
+            .post-left {
+                
+            }
+            .post-right {
+                
+            }
+        }
+        
         
     }
     
