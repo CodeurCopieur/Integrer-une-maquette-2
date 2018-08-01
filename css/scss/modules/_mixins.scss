@@ -15,3 +15,9 @@
     left: $valeur2;
     transform: translate(-$valeur3, -$valeur4);
 }
+
+@mixin centrer-icone($valeur1, $valeur2, $valeur3, $valeur4) {
+	top: $valeur1;
+    left: $valeur2;
+    transform: translate(-$valeur3, -$valeur4);
+}
